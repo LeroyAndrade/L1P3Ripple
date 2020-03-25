@@ -1,0 +1,57 @@
+body {
+  background-color: green;
+}
+
+  .vlakm{
+    height:12em;
+    border: 2px solid #fff;
+  }
+
+  .vlak{
+    height:12em;
+    border: 2px solid #fff;
+  }
+
+label{
+  font-family: sans-serif, Arial;
+  background-color: #f1f1f1;
+  display:block;
+  padding:2em;
+  margin-bottom: 1em;
+  display:grid;
+  grid-template-columns: 1fr auto;
+}
+/*Schakel de default elementen uit*/
+@supports( (-webkit-appearance:none) or (-moz-appearance:none) or (-ms-appearance:none) or (-o-appearance:none) ) {
+    .switch{
+      -ms-appearance:none;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      -o-appearance:none;
+      width:3.5em;
+      height: 1.6em;
+      border-radius: 2em;
+      background-color: blue;
+      /*verwijder outline om de checkbox heen*/
+      outline:none;
+    }
+      .switch::after{
+        content:"";
+        background-color: #fff;
+        display:block;
+        position: relative;
+        width: 1.15em;
+        height: 1.15em;
+        border: .1em solid #fff;
+        border-radius: 45%;
+      }
+
+      .switch:checked{
+        background-color:red;
+      }
+      .switch:after{
+        left:2em;
+      }
+
+
+    }

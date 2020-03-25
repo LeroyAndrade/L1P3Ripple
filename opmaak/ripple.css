@@ -1,0 +1,12 @@
+.vlak{
+  position: relative;
+  height:12em;
+  border: 2px solid #fff;
+}
+
+.rimpl{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
